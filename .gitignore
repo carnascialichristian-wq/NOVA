@@ -1,0 +1,6 @@
+node_modules/
+dist/
+generated_images/
+*.zip
+.DS_Store
+.vercel/
