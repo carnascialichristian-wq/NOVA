@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
-const heroAsset = '/assets/nova-hero-art-deploy.webp'
+const heroAsset = '/assets/nova-hero-art-hi.webp'
+const aboutAsset = '/assets/nova-about-sculpture.webp'
 
 const navItems = [
   { id: 'capabilities', label: 'Capabilities' },
@@ -294,7 +295,7 @@ function App() {
         <section className="about-section section-pad" id="about" data-section="about">
           <div className="container about-layout">
             <Reveal className="about-copy"><div className="eyebrow"><span className="eyebrow-dot" />About NOVA</div><h2>Independent by design.<br /><em>Curious by nature.</em></h2><p>NOVA is a digital product studio partnering with ambitious teams to design and build meaningful products. We combine strategy, design, and engineering to create work that’s thoughtful, scalable, and built to last.</p><a className="button button-dark" href="#contact" onClick={scrollTo}>Learn more about us <Arrow /></a></Reveal>
-            <Reveal className="about-visual" delay={100}><div className="about-art-frame"><img src={heroAsset} alt="Composizione astratta del mondo visivo NOVA" /><span className="about-art-stamp">N / 01</span></div><div className="principles-list">{principles.map((principle) => <div className="principle-row" key={principle.title}><div className={`principle-icon principle-icon-${principle.tone}`}><Icon name={principle.icon} /></div><div><h3>{principle.title}</h3><p>{principle.text}</p></div><Arrow /></div>)}</div></Reveal>
+            <Reveal className="about-visual" delay={100}><div className="about-art-frame"><img src={aboutAsset} alt="Scultura astratta trasparente del mondo visivo NOVA" /><span className="about-art-stamp">N / 01</span></div><div className="principles-list">{principles.map((principle) => <div className="principle-row" key={principle.title}><div className={`principle-icon principle-icon-${principle.tone}`}><Icon name={principle.icon} /></div><div><h3>{principle.title}</h3><p>{principle.text}</p></div><Arrow /></div>)}</div></Reveal>
           </div>
         </section>
 
